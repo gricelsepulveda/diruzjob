@@ -4,7 +4,25 @@ import "./styles/selection.scss"
 const Selection = () => {
   return (
     <section className="selection-page page">
-            <img className="pj-decoration" alt="pj-decoration" title="pj-decoration" src="https://www.alfabetajuega.com/wp-content/uploads/2018/10/156665.alfabetajuega-slowpoke-150716.png"/>
+            <section className="selected-pj-corner">
+                <div className="flex col center">
+                    <div className="pj-corner">
+                        <img alt="pj-corner" title="pj-corner" src="https://www.alfabetajuega.com/wp-content/uploads/2018/10/156665.alfabetajuega-slowpoke-150716.png"/>
+                    </div>
+                    <div className="pj-corner">
+                        <img alt="pj-corner" title="pj-corner" src="https://www.alfabetajuega.com/wp-content/uploads/2018/10/156665.alfabetajuega-slowpoke-150716.png"/>
+                    </div>
+                    <div className="pj-corner">
+                        <img alt="pj-corner" title="pj-corner" src="https://www.alfabetajuega.com/wp-content/uploads/2018/10/156665.alfabetajuega-slowpoke-150716.png"/>
+                    </div>
+                    <div className="pj-corner">
+                        <img alt="pj-corner" title="pj-corner" src="https://www.alfabetajuega.com/wp-content/uploads/2018/10/156665.alfabetajuega-slowpoke-150716.png"/>
+                    </div>
+                    <div className="pj-corner">
+                        <img alt="pj-corner" title="pj-corner" src="https://www.alfabetajuega.com/wp-content/uploads/2018/10/156665.alfabetajuega-slowpoke-150716.png"/>
+                    </div>
+                </div>
+            </section>
 			<div className="flex col center title-shine">
 				<div className="shine">
 					<h1>

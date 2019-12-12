@@ -17,14 +17,52 @@ PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8v
   PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgY2xhc3M9IiI+PGc+PGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMjU2LDBDMTE0LjYxOCwwLDAsMTE0LjYxOCwwLDI1NnMxMTQuNjE4LDI1NiwyNTYsMjU2czI1Ni0xMTQuNjE4LDI1Ni0yNTZTMzk3LjM4MiwwLDI1NiwweiBNMjU2LDQ2OS4zMzMgICAgYy0xMTcuODE4LDAtMjEzLjMzMy05NS41MTUtMjEzLjMzMy0yMTMuMzMzUzEzOC4xODIsNDIuNjY3LDI1Niw0Mi42NjdTNDY5LjMzMywxMzguMTgyLDQ2OS4zMzMsMjU2UzM3My44MTgsNDY5LjMzMywyNTYsNDY5LjMzM3ogICAgIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBjbGFzcz0iYWN0aXZlLXBhdGgiIHN0eWxlPSJmaWxsOiNGRkZGRkYiIGRhdGEtb2xkX2NvbG9yPSIjMDAwMDAwIj48L3BhdGg+Cgk8L2c+CjwvZz48L2c+IDwvc3ZnPg==");
 }
 
-.pj-decoration{
+.selected-pj-corner{
   position: fixed;
-  height: 65vh;
-  width: 20%;
-  overflow: hidden;
+  height: 100vh;
+  width: 25%;
   @include flex-col-center;
-  right: 0;
-  top: 17.5vh;
+  right: -20px;
+  top: 0;
+  padding-top: 20%;
+  box-sizing: border-box;
+  .flex {
+    position: relative;
+    width: 100%;
+    height: 80%;
+    padding-top: calc(10px * 5);
+    .pj-corner {
+      width: 100%;
+      height: calc(100% / 5 );
+      overflow: hidden;
+      padding-left: 20px;
+      margin-top: -10px;
+      position: relative;
+      transform: rotate(22.5deg);
+      &:before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        content: "";
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        z-index: 0;
+        background: {
+          size: 100% 100%;
+          repeat: no-repeat;
+          position: center;
+        }
+        @include star-outline;
+        transform: rotate(-22.5deg);
+      }
+      img {
+        height: 100%;
+        position: relative;
+        z-index: 1;
+      }
+    }
+  }
 }
 
 .selection-page {
