@@ -17,12 +17,24 @@ PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8v
   PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgY2xhc3M9IiI+PGc+PGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMjU2LDBDMTE0LjYxOCwwLDAsMTE0LjYxOCwwLDI1NnMxMTQuNjE4LDI1NiwyNTYsMjU2czI1Ni0xMTQuNjE4LDI1Ni0yNTZTMzk3LjM4MiwwLDI1NiwweiBNMjU2LDQ2OS4zMzMgICAgYy0xMTcuODE4LDAtMjEzLjMzMy05NS41MTUtMjEzLjMzMy0yMTMuMzMzUzEzOC4xODIsNDIuNjY3LDI1Niw0Mi42NjdTNDY5LjMzMywxMzguMTgyLDQ2OS4zMzMsMjU2UzM3My44MTgsNDY5LjMzMywyNTYsNDY5LjMzM3ogICAgIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBjbGFzcz0iYWN0aXZlLXBhdGgiIHN0eWxlPSJmaWxsOiNGRkZGRkYiIGRhdGEtb2xkX2NvbG9yPSIjMDAwMDAwIj48L3BhdGg+Cgk8L2c+CjwvZz48L2c+IDwvc3ZnPg==");
 }
 
+.pj-decoration{
+  position: fixed;
+  height: 65vh;
+  width: 20%;
+  overflow: hidden;
+  @include flex-col-center;
+  right: 0;
+  top: 17.5vh;
+}
+
 .selection-page {
   display: flex;
   flex-direction: column;
-  justify-content:  space-between;
+  justify-content:  center;
   align-content: center;
   align-items: center;
+  padding-bottom: 60px!important;
+  box-sizing: border-box;
 }
 
 .title-shine {
@@ -32,15 +44,19 @@ PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8v
     align: center;
     transform: uppercase;
   }
+  margin-top: 20px;
+  margin-bottom: 40px;
   h1 {
     font-size: 64px;
     width: 100%;
+    font-style:  italic;
     span {
       display: block;
       text-align: center;
       font-style: italic;
+      line-height: 10px;
       font: {
-        size: 28px;
+        size: 20px;
         family: "Noto Sans", sans-serif;
       }
     }
@@ -56,8 +72,8 @@ PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8v
 
 .selection-body {
   position: relative;
-  width: 60%;
-  margin-right: 20%;
+  width: 70%;
+  margin-right: 30%;
   text: {
     align: center;
     transform: uppercase;
@@ -65,15 +81,30 @@ PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8v
   h1 {
     font-size: 28px;
     width: 100%;
+    margin-bottom: 10px!important;
+    font-style:  italic;
     span {
       display: block;
       text-align: center;
       font-style: italic;
+      line-height: 7px;
       font: {
         size: 12px;
         family: "Noto Sans", sans-serif;
       }
     }
+  }
+  a {
+    color: $white;
+    text-decoration: underline;
+    font-size: 10px;
+    text-align: center;
+    font-style: italic;
+    text-transform: initial;
+    margin-top: 10px;
+  }
+  .button-list {
+    margin-top: 10px;
   }
 }
 
@@ -83,11 +114,13 @@ img {
 
 .pj-grid {
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .pj {
-  margin: 10px;
+  margin: 5px;
   @include flex-col-center;
+  width: calc((100% / 3) - 10px);
   &.star {
     .pj-image {
       @include star;
@@ -99,14 +132,14 @@ img {
     }
   }
   .pj-image {
-    width: 20%;
+    width: 80%;
     position: relative;
     background: {
-      size: cover;
+      size: auto 100%;
       repeat: no-repeat;
       position: center;
     }
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     img {
       width: 100%;
     }
@@ -117,11 +150,14 @@ img {
     transform: uppercase;
   }
   h2 {
-    font-size: 18px;
+    font-size: 14px;
+    max-width: 100%;
+    font-style:  italic;
     span {
       display: block;
       text-align: center;
       font-style: italic;
+      line-height: 10px;
       font: {
         size: 10px;
         family: "Noto Sans", sans-serif;
@@ -131,14 +167,67 @@ img {
 }
 
 .selection-footer {
-  font-size: 12px;
+  font-size: 10px;
   color: $white;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  min-height: 30px;
+  @include flex-row-center;
   p {
+    @include flex-row-center;
     img {
       width: 20px;
       height: 20px;
       max-width: 20px;
+      &.at {
+        margin-right: 5px;
+      }
+      &.g5{
+        margin-left: 5px;
+      }
     }
   }
 }
 
+.button {
+  width: 56px;
+  height: 56px;
+  border-radius: 32px;
+  background-color: $white;
+  position: relative;
+  margin-right: 10px;
+  &:last-of-type {
+    margin-right: 0px;
+  }
+  &:before{
+    content: "";
+    display: inline-block;
+    background: $white;
+    border: 0;
+    width: 56px;
+    height: 56px;
+    border-radius: 32px;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+  }
+  button {
+    text-transform: uppercase; 
+    background: $color-1;
+    border: 0;
+    width: 56px;
+    height: 56px;
+    border-radius: 32px;
+    position: absolute;
+    left: 0;
+    top: 2px;
+    font-size: 12px;
+    max-width: 100%;
+    font-style:  italic;
+    font-family: "Lilita One";
+    color: $white;
+    padding: 0;
+  }
+}
