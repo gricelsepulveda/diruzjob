@@ -1,9 +1,10 @@
 import React from "react"
+import "./styles/selection.scss"
 
 const Selection = () => {
   return (
     <section className="selection-page page">
-			<div class="flex col center title-shine">
+			<div className="flex col center title-shine">
 				<div className="shine">
 					<h1>
 						<span>Pose with</span>
@@ -24,13 +25,13 @@ const Selection = () => {
 					<div className="pj-grid">
 						<div className="pj star">
 							<div className="pj-image">
-								<img alt="pj-name" title="pj-name" src="https://i.pinimg.com/474x/ff/ee/d8/ffeed8d17dfefe52b0045bbbeb69d6d4.jpg"/>
+								<img alt="pj-name" title="pj-name" src="https://www.alfabetajuega.com/wp-content/uploads/2018/10/156665.alfabetajuega-slowpoke-150716.png"/>
 							</div>
 							<h2><span>Name</span>LastName</h2>
 						</div>
 						<div className="pj circle">
 							<div className="pj-image">
-								<img alt="pj-name" title="pj-name" src="https://i.pinimg.com/474x/ff/ee/d8/ffeed8d17dfefe52b0045bbbeb69d6d4.jpg"/>
+								<img alt="pj-name" title="pj-name" src="https://www.alfabetajuega.com/wp-content/uploads/2018/10/156665.alfabetajuega-slowpoke-150716.png"/>
 							</div>
 							<h2><span>Name</span>LastName</h2>
 						</div>

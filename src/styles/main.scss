@@ -12,7 +12,9 @@ body {
   font-family: "Noto Sans", sans-serif;
   background-color: sykblue;
   position: relative;
-  &:after {
+  z-index: 0;
+  &:before {
+    z-index: -1;
     position: absolute;
     left: 0px;
     top: 0px;
