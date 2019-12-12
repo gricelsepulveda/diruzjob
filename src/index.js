@@ -4,9 +4,6 @@ import { render } from 'react-dom'
 //scss
 import './styles/main.scss'
 
-//PAGES
-
-//MOBILE CLICK MENU 
 const App = () => (
   <div></div>
 )
