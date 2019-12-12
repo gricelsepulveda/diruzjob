@@ -1,9 +1,10 @@
 import React from "react"
+import "./styles/experience.scss"
 
-const Selection = () => {
+const Experience = () => {
   return (
     <section className="experience-page page flex col center">
-			<div class="flex col center title-shine">
+			<div className="flex col center title-shine">
 				<div className="shine">
 					<h1>
 						<span>Share your</span>
@@ -15,13 +16,12 @@ const Selection = () => {
 					experience
 				</h1>
 			</div>
-            <img className="team-photo" alt="team-photo" title="team-photo" src="https://i.pinimg.com/474x/ff/ee/d8/ffeed8d17dfefe52b0045bbbeb69d6d4.jpg"/>
-            <div className="flex row center team-buttons">
-                <button type="button">reset</button>
-
-                <button type="button">submit</button>
+            <img className="team-photo" alt="team-photo" title="team-photo" src="https://pbs.twimg.com/profile_images/1077954872060698624/4lfWQbrQ_400x400.jpg"/>
+            <div className="flex col center experience-buttons">
+                <button className="_button" type="button">reset</button>
+                <button className="_button"  type="button">submit</button>
             </div>
-			<footer className="selection-footer">
+			<footer className="experience-footer">
 				<p>
 					<img src="https://shape.att.com/static-assets/images/2019/exhibits/exhibit-logo-att.png" alt="at&t_logo" title="logo at&t"/>
 					Stadium powered by
@@ -32,4 +32,4 @@ const Selection = () => {
   )
 }
 
-export default Selection
+export default Experience
