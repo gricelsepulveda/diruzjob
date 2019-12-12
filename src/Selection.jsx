@@ -22,7 +22,7 @@ const Selection = () => {
 					five players
 				</h1>
 				<div className="selection-lot flex col center">
-					<div className="pj-grid">
+					<div className="pj-grid flex row center">
 						<div className="pj star">
 							<div className="pj-image">
 								<img alt="pj-name" title="pj-name" src="https://www.alfabetajuega.com/wp-content/uploads/2018/10/156665.alfabetajuega-slowpoke-150716.png"/>
