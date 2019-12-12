@@ -1,11 +1,12 @@
-import React, { Fragment } from "react"
+import React from "react"
 import { render } from 'react-dom'
+import Selection from "./Selection.jsx"
 
 //scss
 import './styles/main.scss'
 
 const App = () => (
-  <div></div>
+    <Selection/>
 )
 
 render(<App/>, document.getElementById('root'))

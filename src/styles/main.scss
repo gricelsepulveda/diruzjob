@@ -5,3 +5,38 @@
 * {
     box-sizing: border-box;
 }
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Noto Sans", sans-serif;
+  background-color: sykblue;
+  position: relative;
+  &:after {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: inline-block;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.25;
+    content: "";
+    background: {
+      size: cover;
+      repeat: no-repeat;
+      position: center;
+      image: url("http://placekitten.com/g/2000/1000")
+    }
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @include clean-webkit;
+  @include zero-hard;
+  font-family: "Lilita One";
+}
+
+.page {
+  width: 100vw;
+  height: 100vh;
+}
