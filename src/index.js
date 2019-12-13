@@ -8,8 +8,8 @@ import './styles/main.scss'
 
 const App = () => (
     //comment or uncomment to show
-    <Selection/>
-    /*<Experience/>*/
+    /*<Selection/>*/
+    <Experience/>
 )
 
 render(<App/>, document.getElementById('root'))

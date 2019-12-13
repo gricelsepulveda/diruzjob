@@ -20,20 +20,20 @@
     align: center;
     transform: uppercase;
   }
-  margin-top: 20px;
-  margin-bottom: 40px;
+  margin-top: 5em;
+  margin-bottom: 10em;
   h1 {
-    font-size: 56px;
+    font-size: 10.5em;
     width: 100%;
     font-style:  italic;
     span {
       display: block;
       text-align: center;
       font-style: italic;
-      line-height: 10px;
+      line-height: 1.25em;
       letter-spacing: 5px;
       font: {
-        size: 20px;
+        size: 0.25em;
         family: "Noto Sans", sans-serif;
       }
     }
@@ -51,53 +51,54 @@
 .team-photo {
     border: 10px solid $white;
     @include shadow;
-    width: 80%;
-    margin-bottom: 40px;
+    width: 70%;
+    margin-bottom: 6em;
 }
 
 .experience-footer {
-  font-size: 10px;
-  color: $white;
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  min-height: 30px;
-  @include flex-row-center;
-  p {
+    font-size: 1.25em;
+    color: $white;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    min-height: 30px;
     @include flex-row-center;
-    img {
-      width: 20px;
-      height: 20px;
-      max-width: 20px;
-      &.at {
-        margin-right: 5px;
-      }
-      &.g5{
-        margin-left: 5px;
+    p {
+      @include flex-row-center;
+      img {
+        width: 2em;
+        height: 2em;
+        max-width: 2em;
+        &.at {
+          margin-right: 0.5em;
+        }
+        &.g5{
+          margin-left: 0.5em;
+        }
       }
     }
   }
-}
+  
 
 .experience-buttons {
     width: 80%;
 }
 
 button._button {
-    padding-left: 20px;
-    padding-right: 20px;
-    height: 38px;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    height: 3.5em;
     @include flex-row-center;
     width: 100%;
-    border-radius: 10px;
+    border-radius: 0.5em;
     background-color: $white;
     position: relative;
     margin-bottom: 20px;
-    border: 2px solid $white;
+    border: 4px solid $white;
     text-transform: uppercase; 
     background: transparent;
-    font-size: 16px;
+    font-size: 2.5em;
     max-width: 100%;
     font-style:  italic;
     font-family: "Lilita One";
