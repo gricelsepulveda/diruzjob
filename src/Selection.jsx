@@ -1,26 +1,17 @@
 import React from "react"
 import "./styles/selection.scss"
+import PjCorner from "./PjCorner.jsx"
 
 const Selection = () => {
   return (
     <section className="selection-page page">
             <section className="selected-pj-corner">
                 <div className="flex col center">
-                    <div className="pj-corner">
-                        <img alt="pj-corner" title="pj-corner" src="https://www.alfabetajuega.com/wp-content/uploads/2018/10/156665.alfabetajuega-slowpoke-150716.png"/>
-                    </div>
-                    <div className="pj-corner">
-                        <img alt="pj-corner" title="pj-corner" src="https://www.alfabetajuega.com/wp-content/uploads/2018/10/156665.alfabetajuega-slowpoke-150716.png"/>
-                    </div>
-                    <div className="pj-corner">
-                        <img alt="pj-corner" title="pj-corner" src="https://www.alfabetajuega.com/wp-content/uploads/2018/10/156665.alfabetajuega-slowpoke-150716.png"/>
-                    </div>
-                    <div className="pj-corner">
-                        <img alt="pj-corner" title="pj-corner" src="https://www.alfabetajuega.com/wp-content/uploads/2018/10/156665.alfabetajuega-slowpoke-150716.png"/>
-                    </div>
-                    <div className="pj-corner">
-                        <img alt="pj-corner" title="pj-corner" src="https://www.alfabetajuega.com/wp-content/uploads/2018/10/156665.alfabetajuega-slowpoke-150716.png"/>
-                    </div>
+					<PjCorner active="false"/>
+					<PjCorner active="false"/>
+					<PjCorner active="false"/>
+					<PjCorner active="false"/>
+					<PjCorner active="false"/>
                 </div>
             </section>
 			<div className="flex col center title-shine">
